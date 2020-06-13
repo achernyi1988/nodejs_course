@@ -27,7 +27,7 @@ searchForm.addEventListener(('submit'), (e) => {
    messageOne.textContent = "loading..."
    messageTwo.textContent = ""
 
-   fetch("http://localhost:3000/weather?address=" + address)
+   fetch("/weather?address=" + address)
       .then((response) => response.json()
          .then((data) => {
 

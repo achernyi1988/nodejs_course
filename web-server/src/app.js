@@ -4,6 +4,8 @@ const { geocode, getWeather } = require("../api/api")
 const path = require("path")
 
 const express = require("express")
+const port = process.env.PORT || 3000
+
 const hbs = require("hbs")
 const app = express()
 
@@ -97,7 +99,7 @@ app.get("*", (req, res) => {
 
 
 
-const port = 3000
+//const port = 3000
 app.listen(port, () => {
    log("Server is up on port", port)
 })
